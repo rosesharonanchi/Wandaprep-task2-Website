@@ -25,12 +25,30 @@
         <img src="assets/images.png" alt="" />
         <h1>coca</h1>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="link-wrap">
+        <ul>
+          <li class="remove-link"><a href="#">Home</a></li>
+          <li class="remove-link"><a href="#">About Us</a></li>
+          <li class="remove-link"><a href="#">Our team</a></li>
+          <li class="remove-link"><a href="#">Contact</a></li>
+          <li id="menu">
+            <a href="#"><i class="fas fa-bars menu"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="sidebar">
+      <div class="link-wrap">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-times remove"></i></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <!--End of navbar  -->
     <!-- Start of hero section -->
@@ -62,7 +80,7 @@
     </div>
     <!-- End of hero section -->
     <!-- Start of rating section -->
-    <section class="rating-section">
+    <section class="rating-section remove-width">
       <div class="rating-stars">
         <div class="rating1">
           <div class="flex-star">
@@ -97,7 +115,7 @@
     </section>
     <!-- End of rating section-->
     <!-- Start of companies section -->
-    <scetion class="company-section">
+    <section class="company-section">
       <h3>Trusted by Big Companies</h3>
       <div class="company">
         <div class="company-logo">
@@ -121,12 +139,12 @@
           <h4>SYMTRIC</h4>
         </div>
       </div>
-    </scetion>
+    </section>
     <!-- End of companies section -->
     <!-- Start of workflow section -->
     <div class="dark-workflow">
       <div class="workflow-grid">
-        <div class="grid">
+        <div class="grid grid-block">
           <div class="grid-item1">
             <i class="fas fa-cog icon"></i>
           </div>
@@ -138,7 +156,7 @@
             </p>
           </div>
         </div>
-        <div class="grid">
+        <div class="grid grid-block">
           <div class="grid-item1">
             <i class="fas fa-cog icon"></i>
           </div>
@@ -151,7 +169,7 @@
           </div>
         </div>
 
-        <div class="grid2">
+        <div class="grid2 grid-block">
           <h2>Easy, Dynamic, and <br />Optimal Workflow</h2>
           <p>
             We adhere to the finest, official, and uncomplicated <br />
@@ -159,7 +177,7 @@
           </p>
         </div>
 
-        <div class="grid">
+        <div class="grid grid-block">
           <div class="grid-item1">
             <i class="fas fa-cog icon"></i>
           </div>
@@ -171,7 +189,7 @@
             </p>
           </div>
         </div>
-        <div class="grid">
+        <div class="grid grid-block">
           <div class="grid-item1">
             <i class="fas fa-cog icon"></i>
           </div>
@@ -207,32 +225,54 @@
         <div class="service-items">
           <div class="service-item">
             <h2><span>01 </span>Setting Process, Deleting Task</h2>
-            <i class="fas fa-add plus-icon"></i>
+            <div class="icons">
+              <i class="fas fa-add plus-icon"></i>
+              <i class="fas fa-minus minus-icon"></i>
+            </div>
           </div>
-        </div>
-        <div class="service-items">
-          <div class="service-item">
-            <h2><span>01 </span>Setting Process, Deleting Task</h2>
-            <i class="fas fa-add plus-icon"></i>
-          </div>
-          <p>
+          <p id="para1">
             Navigating the Depths of Project Management Strategies, <br />
             Techniques, and Best Practices.
           </p>
         </div>
         <div class="service-items">
           <div class="service-item">
-            <h2><span>01 </span>Setting Process, Deleting Task</h2>
-            <i class="fas fa-add plus-icon"></i>
+            <h2><span>02 </span>Dive into Project Management</h2>
+            <div class="icons">
+              <i class="fas fa-add plus-icon"></i>
+              <i class="fas fa-minus minus-icon"></i>
+            </div>
           </div>
-          <p></p>
+          <p id="para1">
+            Navigating the Depths of Project Management Strategies, <br />
+            Techniques, and Best Practices.
+          </p>
         </div>
         <div class="service-items">
           <div class="service-item">
-            <h2><span>01 </span>Setting Process, Deleting Task</h2>
-            <i class="fas fa-add plus-icon"></i>
+            <h2><span>03 </span>Setting Process, Deleting Task</h2>
+            <div class="icons">
+              <i class="fas fa-add plus-icon"></i>
+              <i class="fas fa-minus minus-icon"></i>
+            </div>
           </div>
-          <p></p>
+          <p id="para1">
+            Navigating the Depths of Project Management Strategies, <br />
+            Techniques, and Best Practices.
+          </p>
+        </div>
+        <div class="service-items">
+          <div class="service-item">
+            <h2><span>04 </span>Setting Process, Deleting Task</h2>
+            <div class="icons">
+              <i class="fas fa-add plus-icon"></i>
+              <i class="fas fa-minus minus-icon"></i>
+            </div>
+          </div>
+          <p id="para1">
+            Navigating the Depths of Project Management Strategies, <br />
+            Techniques, and Best Practices.
+          </p>
         </div>
       </div>
     </div>
@@ -269,11 +309,11 @@
           <p>Exploring the Talented Members of Our Creative Crew.</p>
         </div>
         <div class="scroll-button">
-          <i class="fas fa-arrow-left arrow left"></i>
-          <i class="fas fa-arrow-right arrow click right"></i>
+          <i class="fas fa-arrow-left arrow left" id="left-arrow"></i>
+          <i class="fas fa-arrow-right arrow click right" id="right-arrow"></i>
         </div>
       </div>
-      <div class="cards">
+      <div class="cards" id="my-cards">
         <div class="card">
           <div class="card-image">
             <img src="assets/pic1.png" alt="" />
@@ -422,8 +462,7 @@
     </footer>
     <!-- End of footer -->
 
-
     <!-- script -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
