@@ -22,11 +22,11 @@ const cards = document.getElementById("my-cards");
 const cardArray = document.getElementsByClassName("card");
 
 let count = 0;
-leftButton.addEventListener("click", () => {
+rightButton.addEventListener("click", () => {
   count = (count - 1) % cardArray.length;
   move(count);
 });
-rightButton.addEventListener("click", () => {
+leftButton.addEventListener("click", () => {
   count = (count + 1) % cardArray.length;
   move(count);
 });
