@@ -47,14 +47,12 @@ addBtns.forEach((btn, index) => {
     texts[index].style.display = "flex";
     addBtns[index].style.display = "none";
     minusBtns[index].style.display = "flex";
-    texts[index].style.fontWeight = "bold";
   });
 }),
   minusBtns.forEach((btn1, index) => {
     btn1.addEventListener("click", () => {
       texts[index].style.display = "none";
       minusBtns[index].style.display = "none";
-      addBtns[index].style.display = "flex";
     });
   });
 
