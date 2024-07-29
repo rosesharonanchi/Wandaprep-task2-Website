@@ -18,7 +18,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter";
-  font-weight: lighter;
+ 
+ 
 }
 /* start of navbar */
 ul li {
@@ -53,13 +54,16 @@ ul a {
   position: fixed;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100vh;
   right: 0;
   bottom: 0;
-  width: 20rem;
-  padding: 2rem 3rem;
+  width: 15rem;
+  padding: 2rem 0rem;
+  padding-right: 3rem;
   z-index: 999;
   display: none;
+ 
 }
 .sidebar ul li {
   margin-bottom: 2.5rem;
@@ -508,6 +512,9 @@ p {
 @media (max-width: 768px) {
   br {
     display: none;
+  }
+  .logo h1{
+    font-size: 2rem;
   }
   .hero-text {
     text-align: center;
