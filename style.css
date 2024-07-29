@@ -18,7 +18,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter";
- 
+  /* font-weight: lighter; */
  
 }
 /* start of navbar */
@@ -433,7 +433,7 @@ p {
 .logo1 {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 .logo1 img {
   width: 3rem;
@@ -658,7 +658,7 @@ p {
     display: none;
   }
   .footer1 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .footer2 {
     flex-direction: column;
@@ -677,12 +677,23 @@ p {
     font-size: 1.5rem;
   }
 
-  .footer3-left {
+  .footer3-left S{
     flex-direction: column;
     gap: 0;
   }
   .footer2-left > * {
     margin-top: 2rem;
+  }
+  .grid2 h2{
+    font-size: 1.6rem;
+  }
+  .logo1 img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .logo1 h2 {
+  font-size: 1.4rem;
+
   }
 }
 
