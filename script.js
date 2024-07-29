@@ -27,7 +27,7 @@ rightButton.addEventListener("click", () => {
   move(count);
 });
 leftButton.addEventListener("click", () => {
-  count = (count + 1) % cardArray.length;
+  count = (count -1) % cardArray.length;
   move(count);
 });
 
@@ -47,12 +47,14 @@ addBtns.forEach((btn, index) => {
     texts[index].style.display = "flex";
     addBtns[index].style.display = "none";
     minusBtns[index].style.display = "flex";
+    
   });
 }),
   minusBtns.forEach((btn1, index) => {
     btn1.addEventListener("click", () => {
       texts[index].style.display = "none";
       minusBtns[index].style.display = "none";
+      addBtns[index].style.display = "flex";
     });
   });
 
